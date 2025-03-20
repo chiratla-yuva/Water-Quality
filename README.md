@@ -7,7 +7,7 @@ This project is a **real-time monitoring system** for water quality in aquacultu
 - **Real-time pH and Temperature Monitoring**
 - **Wireless Sensor Network using Arduino Uno & ESP8266 NodeMCU**
 - **Data Storage with MongoDB (via REST API)**
-- **Gauge Chart for Live Sensor Readings**
+- **Bar Chart for Live Sensor Readings**
 - **Historical Data Visualization**
 - **Admin Portal for User Management (In Progress)**
 - **Alert System for Abnormal Sensor Values (In Progress)**
