@@ -58,9 +58,3 @@ npm run dev
     - Which value is beyond the range.
     - Recommended actions to take immediately.
   - Alert system should notify admins via UI (and optionally email/SMS in future versions).
-
-## Contribution
-Feel free to contribute by submitting a pull request or reporting issues.
-
-## License
-This project is licensed under the MIT License.
