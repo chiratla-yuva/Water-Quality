@@ -8,7 +8,7 @@ const RealtimeData = () => {
     useEffect(() => {
         const fetchSensorData = async () => {
             try {
-                const response = await axios.get("http://localhost:4000/api/sensors/latest");
+                const response = await axios.get("https://water-quality-backend-v5h7.onrender.com/api/sensors/latest");
                 if (response.data.success) {
                     setSensorData(response.data.data);
                 }
