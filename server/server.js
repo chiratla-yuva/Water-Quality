@@ -19,7 +19,7 @@ const port = process.env.PORT || 4000;
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors({
-    origin: "https://water-quality-frontend.onrender.com/", 
+    origin: "https://water-quality-frontend.onrender.com", 
     credentials: true
 }));
 
