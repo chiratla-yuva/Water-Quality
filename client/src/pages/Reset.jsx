@@ -26,7 +26,7 @@ const Reset = () => {
             setLoading(true);
             const token = localStorage.getItem("token");
             const res = await axios.post(
-                "http://localhost:4000/api/auth/change-password",
+                "https://water-quality-backend-v5h7.onrender.com/api/auth/change-password",
                 { currentPassword, newPassword },
                 { headers: { Authorization: `Bearer ${token}` } }
             );
