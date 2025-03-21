@@ -23,7 +23,7 @@ const HistoricalData = () => {
     return (
         <div className="flex flex-col items-center p-24">
             <h2 className="text-xl font-bold mb-4">Historical Sensor Data</h2>
-            <BarChart width={600} height={300} data={historicalData}>
+            <BarChart width={450} height={300} data={historicalData}>
                 <CartesianGrid strokeDasharray="3 3" />
                 <XAxis dataKey="timestamp" tickFormatter={(tick) => new Date(tick).toLocaleTimeString()} />
                 <YAxis />
