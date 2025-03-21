@@ -11,7 +11,7 @@ export default function Navbar() {
 
     const handleLogout = async () => {
         try {
-            const response = await fetch("http://localhost:4000/api/auth/logout", { method: "POST", credentials: "include" });
+            const response = await fetch("https://water-quality-backend-v5h7.onrender.com/api/auth/logout", { method: "POST", credentials: "include" });
             const data = await response.json();
             if (data.success) {
                 localStorage.clear();
