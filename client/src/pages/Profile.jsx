@@ -18,7 +18,7 @@ const Profile = () => {
                     return;
                 }
         
-                const res = await axios.get("http://localhost:4000/api/auth/profile", {
+                const res = await axios.get("https://water-quality-backend-v5h7.onrender.com/api/auth/profile", {
                     headers: { Authorization: `Bearer ${token}` },
                 });
         
@@ -51,7 +51,7 @@ const Profile = () => {
         try {
             const token = localStorage.getItem("token");
             const res = await axios.put( // Use PUT instead of POST
-                "http://localhost:4000/api/auth/update-profile",
+                "https://water-quality-backend-v5h7.onrender.com/api/auth/update-profile",
                 { name: user.name, email: user.email }, // Send updated user data
                 { headers: { Authorization: `Bearer ${token}` } }
             );
