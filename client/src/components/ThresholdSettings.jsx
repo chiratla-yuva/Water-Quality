@@ -18,7 +18,7 @@ const ThresholdSettings = () => {
 
     const fetchThresholds = async () => {
         try {
-            const response = await axios.get("http://localhost:4000/api/thresholds/get-thresholds");
+            const response = await axios.get("https://water-quality-backend-v5h7.onrender.com/api/thresholds/get-thresholds");
             if (response.data.success) {
                 setThresholds(response.data.data);
             }
@@ -48,7 +48,7 @@ const ThresholdSettings = () => {
         try {
             if (editingId) {
                 const response = await axios.put(
-                    `http://localhost:4000/api/thresholds/update-thresholds/${editingId}`,
+                    `https://water-quality-backend-v5h7.onrender.com/api/thresholds/update-thresholds/${editingId}`,
                     formData
                 );
                 console.log("Update Response:", response);
@@ -56,7 +56,7 @@ const ThresholdSettings = () => {
                     toast.success("Threshold updated successfully!");
                 }
             } else {
-                const response = await axios.post("http://localhost:4000/api/thresholds/create-threshold", formData);
+                const response = await axios.post("https://water-quality-backend-v5h7.onrender.com/api/thresholds/create-threshold", formData);
                 console.log("Create Response:", response);
                 if (response.data.success) {
                     toast.success("Threshold added successfully!");
