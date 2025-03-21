@@ -19,7 +19,7 @@ const Login = () => {
     
         try {
             const response = await axios.post(
-                'http://localhost:4000/api/auth/login', 
+                'https://water-quality-backend-v5h7.onrender.com/api/auth/login', 
                 { email, password }, 
                 { withCredentials: true }
             );
@@ -47,7 +47,7 @@ const Login = () => {
                     try {
                         const token = localStorage.getItem('token'); // Retrieve token
                         await axios.post(
-                            'http://localhost:4000/api/auth/send-verify-otp', 
+                            'https://water-quality-backend-v5h7.onrender.com/api/auth/send-verify-otp', 
                             { userId: user._id }, 
                             { headers: { Authorization: `Bearer ${token}` } } // Send token in headers
                         );
