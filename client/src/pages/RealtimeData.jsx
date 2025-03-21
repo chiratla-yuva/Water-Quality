@@ -23,7 +23,7 @@ const RealtimeData = () => {
     }, []);
 
     return (
-        <div className="flex flex-col sm:flex-col items-center justify-center p-20">
+                <div className="flex flex-col sm:flex-col items-center justify-center p-20">
             <h2 className="text-xl font-bold mb-4">Realtime Sensor Data</h2>
             {sensorData ? (
                 <div className="flex flex-col sm:flex-row gap-6">
