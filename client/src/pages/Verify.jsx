@@ -28,7 +28,7 @@ const Verify = () => {
         try {
             const token = localStorage.getItem('token');
             const res = await axios.post(
-                "http://localhost:4000/api/auth/resend-verify-otp",
+                "https://water-quality-backend-v5h7.onrender.com/api/auth/resend-verify-otp",
                 { userId },
                 { headers: { Authorization: `Bearer ${token}` } }
             );
@@ -58,7 +58,7 @@ const Verify = () => {
         try {
             const token = localStorage.getItem('token');
             const res = await axios.post(
-                "http://localhost:4000/api/auth/verify-otp",
+                "https://water-quality-backend-v5h7.onrender.com/api/auth/verify-otp",
                 { userId, verifyOtp: otp },
                 { headers: { Authorization: `Bearer ${token}` } }
             );
