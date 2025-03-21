@@ -8,7 +8,7 @@ const HistoricalData = () => {
     useEffect(() => {
         const fetchHistoricalData = async () => {
             try {
-                const response = await axios.get("http://localhost:4000/api/sensors/historical");
+                const response = await axios.get("https://water-quality-backend-v5h7.onrender.com/api/sensors/historical");
                 if (response.data.success) {
                     setHistoricalData(response.data.data);
                 }
