@@ -26,7 +26,7 @@ const RealtimeData = () => {
         <div className="flex flex-col sm:flex-col items-center justify-center p-20">
             <h2 className="text-xl font-bold mb-4">Realtime Sensor Data</h2>
             {sensorData ? (
-                <div className="flex flex-row gap-6">
+                <div className="flex flex-col sm:flex-row gap-6">
                     
                     {/* pH Bar Chart */}
                     <div className="p-4 bg-white shadow-lg rounded-lg">
